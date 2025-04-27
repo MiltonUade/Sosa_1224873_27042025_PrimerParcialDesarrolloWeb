@@ -1,0 +1,93 @@
+/* Estilo para el contenedor de la imagen */
+.logo-materias {
+    width: 100%;       
+    height: auto;      
+    display: flex;
+    justify-content: center; 
+    transition: opacity 1s ease, background-color 1s ease; 
+  }
+  
+  /* Estilo para la imagen dentro del contenedor */
+  .logo-materias img {
+    width: 100%;      
+    height: auto;     
+    max-width: 100%; 
+    object-fit: contain; 
+    opacity: 0.50;
+    transition: opacity 1s ease, background-color 1s ease; 
+  }
+  
+
+/* Estilo para los enlaces dentro de la tabla */
+.link-materia {
+    text-decoration: none; 
+    color: #7160d3; 
+    font-weight: bold; 
+    transition: color 0.3s ease; 
+}
+
+/* Efecto al pasar el ratón sobre los enlaces */
+.link-materia:hover {
+    color: #1af0e5; 
+    text-decoration: underline; 
+}
+
+
+  .main-materias{
+
+    background: linear-gradient(155deg, #042d4e 0%, #052f50 50%, #1af0e5 100%);
+
+  }
+  .header-materias { 
+      background-color: #013655;
+      padding: 0;
+      transition: background-color 1s ease-in-out; 
+  }
+  
+  .main-materias {
+      padding: 60px 20px 40px;
+      background-color: #f9f9f9;
+      margin-top: 0;
+  }
+  
+  .subtitle-materias {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #333;
+      text-align: center;
+  }
+  
+  .schedule-materias {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 40px;
+  }
+  
+  .schedule-materias th,
+  .schedule-materias td {
+      border: 1px solid #ddd;
+      padding: 12px;
+      text-align: center;
+  }
+  
+  .schedule-materias th {
+      background-color: #4CAF50;
+      color: white;
+  }
+  
+  .schedule-materias tr:nth-child(even) {
+      background-color: #f2f2f2;
+  }
+  
+  .schedule-materias tr:hover {
+      background-color: #ddd;
+  }
+  
+  .footer-materias {
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      background-color: #033653;
+      color: white;
+  }
+  

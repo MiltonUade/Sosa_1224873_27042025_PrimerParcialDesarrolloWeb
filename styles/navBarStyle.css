@@ -1,0 +1,53 @@
+/* Estilos de la barra de navegación */
+nav a {
+    text-decoration: none;        
+    color: white;                
+    font-weight: bold;          
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    padding: 8px 10px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+nav a:hover {
+    color: #1af0e5; 
+}
+
+/* Estilo del contenedor del dropdown */
+nav .dropdown {
+    position: relative;
+}
+
+/* Estilo de la lista del dropdown (inicialmente oculta) */
+nav .dropdown-menu {
+    display: none; /* Asegúrate de que esté oculto al inicio */
+    position: absolute;
+    top: 150%;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    min-width: 160px;
+    border-radius: 8px;
+    z-index: 1000;
+}
+
+/* Mostrar el dropdown cuando el mouse pasa por encima del contenedor */
+nav .dropdown:hover .dropdown-menu {
+    display: block; /* Solo se muestra cuando el mouse pasa por encima */
+    border-radius: 8px;
+}
+
+/* Estilo de los enlaces dentro del dropdown */
+nav .dropdown-menu .scroll-container a {
+    padding: 10px 15px;
+    color: white;
+    font-size: 1em;
+    text-decoration: none;
+    display: block;
+    border-radius: 8px;
+}
+
+/* Estilo al pasar el mouse sobre los enlaces del dropdown */
+nav .dropdown-menu .scroll-container a:hover {
+    background-color: #1af0e5;
+    color: #0e2952;
+}

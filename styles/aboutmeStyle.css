@@ -1,0 +1,102 @@
+.body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Esto asegura que el body ocupe toda la pantalla */
+}
+main {
+    flex: 1; 
+  }
+.imLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+}
+
+
+.profile-image {
+    width: 330px; 
+    height: 330px; 
+    border-radius: 40%; 
+    background-image: url('../assets/img/Im.jpg'); 
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); 
+    transition: transform 0.3s ease-in-out, background-image 0.3s ease-in-out; 
+}
+
+
+.profile-image:hover {
+    transform: scale(1.05); 
+    background-image: url('../assets/img/Im2Pictures.png'); 
+}
+
+
+.profile-info {
+    text-align: center; 
+    color: white; 
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 1.2em; 
+    line-height: 1.6em; 
+    margin-top: 20px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+
+}
+
+.profile-info p {
+    margin: 10px 0; 
+    font-weight: 500; 
+}
+footer {
+    margin-top: auto; /* Esto asegura que el footer se mantenga al fondo de la página */
+    text-align: center;
+    padding: 20px;
+    color: white;
+    background-color: transparent;
+  }
+  
+
+.profile-info p:hover {
+    color: #1af0e5;
+    transition: color 0.3s ease; 
+}
+.profile-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px; 
+    margin-top: 2em;
+    flex-wrap: wrap; 
+  }
+  
+.hashtag {
+    text-align: center;
+    margin-top: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.hashtag a {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #1af0e5;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: all 0.3s ease;
+    display: inline-block;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.hashtag a:hover {
+    background-color: #1af0e5;
+    color: white;
+    transform: translateY(-3px); 
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+.hashtag a:active {
+    transform: translateY(0); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
